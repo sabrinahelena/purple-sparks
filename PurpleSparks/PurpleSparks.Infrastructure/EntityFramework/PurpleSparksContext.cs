@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PurpleSparks.Domain.Entities.OrdersModel;
 using PurpleSparks.Domain.Entities.OrdersModel.Foods;
+using PurpleSparks.Infrastructure.EntityFramework.Configuration;
 using System.Reflection;
 
 namespace PurpleSparks.Infrastructure.EntityFramework
@@ -14,9 +15,18 @@ namespace PurpleSparks.Infrastructure.EntityFramework
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-            base.OnModelCreating(builder);
+            builder.ApplyConfiguration(new OrderConfiguration());
+            builder.ApplyConfiguration(new HamburguerConfiguration());
+            builder.ApplyConfiguration(new DrinkConfiguration());
+            builder.ApplyConfiguration(new FriesConfiguration());
+            builder.ApplyConfiguration(new MilkshakeConfiguration());
+            builder.ApplyConfiguration(new StockConfiguration());
+            
+        }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=PurpleSparks;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
 
         public DbSet<HamburguerModel> Hamburguers { get; set; }

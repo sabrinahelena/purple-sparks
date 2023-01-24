@@ -9,7 +9,7 @@ namespace PurpleSparks.Infrastructure.EntityFramework.Configuration
         public void Configure(EntityTypeBuilder<StockModel> builder)
         {
             builder.HasKey(x => x.Uid);
-            builder.Property(x => x.Hamburguers);
+            builder.Property(x => x.Hamburguer);
             builder.Property(x => x.Milkshakes);
             builder.Property(x => x.Drinks);
             builder.Property(x => x.Fries);

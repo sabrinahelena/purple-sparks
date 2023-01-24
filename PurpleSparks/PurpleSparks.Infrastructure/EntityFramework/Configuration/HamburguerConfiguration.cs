@@ -10,13 +10,13 @@ namespace PurpleSparks.Infrastructure.EntityFramework.Configuration
         public void Configure(EntityTypeBuilder<HamburguerModel> builder)
         {
             builder.HasKey(x => x.Uid);
-            builder.Property(x => x.Price).IsRequired();
-            builder.Property(x => x.Quantity).IsRequired();
-            builder.Property(x => x.HamburguerType).IsRequired();
+            builder.Property(x => x.Price);
+            builder.Property(x => x.Quantity);
+            builder.Property(x => x.HamburguerType);
 
 
             builder.HasOne(stock => stock.Stock)
-                .WithMany(hamburguers => hamburguers.Hamburguers);
+                .WithMany(hamburguers => hamburguers.Hamburguer);
         }
     }
 }

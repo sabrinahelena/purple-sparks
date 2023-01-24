@@ -5,6 +5,12 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurpleSparks", "PurpleSparks\PurpleSparks.csproj", "{6DA5C72A-52CE-438B-95A2-45F14D05DF8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurpleSparks.Domain", "PurpleSparks.Domain\PurpleSparks.Domain.csproj", "{89969839-FCB3-4B7D-A45C-459028946E28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurpleSparks.Application", "PurpleSparks.Application\PurpleSparks.Application.csproj", "{7CD62450-9DB7-48F8-AB41-52900ADC0F6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurpleSparks.Infrastructure", "PurpleSparks.Infrastructure\PurpleSparks.Infrastructure.csproj", "{13BD4E2C-F617-4FDE-A97B-B0AC5B4C787B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{6DA5C72A-52CE-438B-95A2-45F14D05DF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DA5C72A-52CE-438B-95A2-45F14D05DF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DA5C72A-52CE-438B-95A2-45F14D05DF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89969839-FCB3-4B7D-A45C-459028946E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89969839-FCB3-4B7D-A45C-459028946E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89969839-FCB3-4B7D-A45C-459028946E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89969839-FCB3-4B7D-A45C-459028946E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD62450-9DB7-48F8-AB41-52900ADC0F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD62450-9DB7-48F8-AB41-52900ADC0F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD62450-9DB7-48F8-AB41-52900ADC0F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD62450-9DB7-48F8-AB41-52900ADC0F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BD4E2C-F617-4FDE-A97B-B0AC5B4C787B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13BD4E2C-F617-4FDE-A97B-B0AC5B4C787B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BD4E2C-F617-4FDE-A97B-B0AC5B4C787B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13BD4E2C-F617-4FDE-A97B-B0AC5B4C787B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

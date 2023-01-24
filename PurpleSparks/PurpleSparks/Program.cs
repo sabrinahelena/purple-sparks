@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using PurpleSparks.Infrastructure.EntityFramework;
+
 namespace PurpleSparks
 {
     public class Program
@@ -9,6 +12,7 @@ namespace PurpleSparks
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddDbContext<PurpleSparksContext>(opt => opt.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=PurpleSparks;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
