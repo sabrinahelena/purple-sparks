@@ -2,8 +2,10 @@
 
 namespace PurpleSparks.Domain.Entities.OrdersModel.Foods
 {
-    public class DrinkModel
+    public class DrinkModel : FoodModel
     {
         public DrinkEnum DrinkType { get; set; }
+        public virtual StockModel Stock { get; set; }
+
     }
 }

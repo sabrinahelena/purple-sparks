@@ -11,5 +11,7 @@ namespace PurpleSparks.Domain.Entities.OrdersModel.Foods
     {
         public float Price { get; set; }
         public int? Quantity { get; set; }
+        public virtual StockModel Stock { get; set; }
+
     }
 }

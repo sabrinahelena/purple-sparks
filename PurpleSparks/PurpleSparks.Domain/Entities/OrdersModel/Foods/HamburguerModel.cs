@@ -5,5 +5,6 @@ namespace PurpleSparks.Domain.Entities.OrdersModel.Foods
     public class HamburguerModel : FoodModel
     {
         public HamburguerEnum HamburguerType { get; set; }
+        public virtual StockModel Stock { get; set; }
     }
 }
